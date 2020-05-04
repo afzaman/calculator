@@ -1,3 +1,39 @@
-.memory{
+body {
+    background-color: #99BDBD;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    font-weight: 200;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+button {
+    width: 20%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #492A1A;
+    border: 0px;
+    color: #F8C63E;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#memory{
+    max-width: 85%;
     white-space: pre-line;
+    font-size: 50px;
+    text-align: right;
+    border: 5px solid black;
+    min-height: 50px;
+}
+#display {
+    height: 50px;
+    max-width: 85%;
+    font-size: 50px;
+    text-align: right;
+    border: 5px solid black;
+
 }

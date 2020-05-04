@@ -4,26 +4,34 @@
     </head>
     <body>
         <div id="display"></div>
-        <button onclick="buttonPress(1)">1</button>
-        <button onclick="buttonPress(2)">2</button>
-        <button onclick="buttonPress(3)">3</button>
-        <button onclick="buttonPress(4)">4</button>
-        <button onclick="buttonPress(5)">5</button>
-        <button onclick="buttonPress(6)">6</button>
-        <button onclick="buttonPress(7)">7</button>
-        <button onclick="buttonPress(8)">8</button>
-        <button onclick="buttonPress(9)">9</button>
-        <button onclick="buttonPress(0)">0</button>
-        <button onclick="buttonPress('.')">.</button>
-        <button onclick="buttonPress('(')">(</button>
-        <button onclick="buttonPress(')')">)</button>
-        <button onclick="buttonPress('+')">+</button>
-        <button onclick="buttonPress('-')">-</button>
-        <button onclick="buttonPress('*')">x</button>
-        <button onclick="buttonPress('/')">÷</button>
-        <button onclick="operate()">=</button>
-        <button onclick="clearButton()">Clear</button>
-        <button onclick="deleteButton()">Delete</button>
+        <div class="keypad">
+            <button id="clearButton" onclick="clearButton()">Clear</button>
+            <button onclick="buttonPress('(')">(</button>
+            <button onclick="buttonPress(')')">)</button>
+            <button onclick="buttonPress('/')">÷</button>
+
+            <button onclick="buttonPress(7)">7</button>
+            <button onclick="buttonPress(8)">8</button>
+            <button onclick="buttonPress(9)">9</button>
+            <button onclick="buttonPress('*')">x</button>
+
+            <button onclick="buttonPress(4)">4</button>
+            <button onclick="buttonPress(5)">5</button>
+            <button onclick="buttonPress(6)">6</button>
+            <button onclick="buttonPress('-')">-</button>
+
+            <button onclick="buttonPress(1)">1</button>
+            <button onclick="buttonPress(2)">2</button>
+            <button onclick="buttonPress(3)">3</button>
+            <button onclick="buttonPress('+')">+</button>
+
+            <button onclick="deleteButton()">Delete</button>
+            <button onclick="buttonPress(0)">0</button>
+            <button onclick="buttonPress('.')">.</button>
+            <button onclick="operate()">=</button>
+
+        </div>
+        <h1>MEMORY</h1>
         <div id="memory" class="memory"></div>
     </body>
     <script src="script.js"></script>

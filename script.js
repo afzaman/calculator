@@ -1,3 +1,16 @@
+document.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        operate();
+    } if (event.keyCode >= 96 && event.keyCode <= 111 
+        || event.keyCode >= 48 && event.keyCode <= 57 
+        || event.keyCode === 189
+        || event.keyCode === 187
+        || event.keyCode === 57){
+            document.getElementById("display").textContent += event.key;
+    } if (event.keyCode === 8 || event.keyCode === 46){
+        deleteButton();
+    };
+});
 function operate(){
     var equationCompleted = document.getElementById("display").textContent;
     document.getElementById("display").textContent = eval(equationCompleted);
@@ -14,7 +27,3 @@ function deleteButton(){
     var newStr = str.slice(0,-1);
     document.getElementById("display").textContent = newStr;
 }
-document.addEventListener("keydown", function(event) {
-    if (event.key )
-    document.getElementById("display").textContent += event.key;
-  })
